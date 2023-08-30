@@ -51,8 +51,30 @@ object bruno{
 	method estaPerfecto(){
 	  return esFeliz and not tieneSed and peso.between(50000,70000)
 	}
+	
+	method mediodiaEnCasa(){
+	  self.comerFideo()
+	  self.tomarAgua()
+	  self.verElNoticiero()
+	}
  }
 
 object ramiro{
 	
-} 
+  var contracturado= 0
+  var pielGrasosa= false
+
+  method contracturado(){
+	return contracturado
+  }
+  method pielGrasosa(){
+	return pielGrasosa
+  }
+  method recibirMasajes(){
+	 contracturado = 0.max(contracturado - 2) // hace el maximo entre el 0 y lo que le pongas en el parentesis 	 
+  } 
+  method  banioDeVapor(){
+  	pielGrasosa= false
+  }
+         
+}
